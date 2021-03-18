@@ -4,7 +4,7 @@
     <h1>Today</h1>
     <% require 'date' %>
     <% date = DateTime.now %>
-    <% date %>
+    <% fmt_date = date.strftime("%A") %>
     <p>The date is <%= date.to_s %></p>
   </body>
 </html>
